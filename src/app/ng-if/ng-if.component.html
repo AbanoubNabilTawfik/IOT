@@ -1,0 +1,33 @@
+<p>ng-if works!</p>
+
+<!-- <h2 *ngIf="false">
+    Hello ITI
+</h2>
+
+<h2 *ngIf="displayName">
+    Hello ITI IOT Track
+</h2> -->
+
+<!-- <h2 *ngIf="displayName else elseBlock ">
+       Hello {{fullName}}
+</h2>
+
+<ng-template #elseBlock>
+    <h2>
+        Hello Guest
+    </h2>
+</ng-template> -->
+<div *ngIf="displayName; then thenBlock; else  elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h2>
+        Hello {{fullName}}
+    </h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>
+        Hello Guest
+    </h2>
+</ng-template>
+
