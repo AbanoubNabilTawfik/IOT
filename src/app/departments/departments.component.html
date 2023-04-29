@@ -1,0 +1,5 @@
+<p>departments works!</p>
+
+<div *ngFor="let dept of departments" [class.selected]="dept.id==selectedId" (click)="goToDepartmentDetails(dept.id)">
+    {{dept.id}} ) {{dept.name}}
+</div>
