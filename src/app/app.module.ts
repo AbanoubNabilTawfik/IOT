@@ -11,7 +11,7 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
@@ -28,6 +28,7 @@ import { DepartmentDetailsComponent } from './department-details/department-deta
 import { OverviewComponent } from './overview/overview.component';
 import { ContactComponent } from './contact/contact.component';
 import { TdfComponent } from './tdf/tdf.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,13 +54,15 @@ import { TdfComponent } from './tdf/tdf.component';
     DepartmentDetailsComponent,
     OverviewComponent,
     ContactComponent,
-    TdfComponent
+    TdfComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
